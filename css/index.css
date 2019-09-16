@@ -1,0 +1,638 @@
+@import "header.css";
+@import "intro.css";
+@import "goals.css";
+@import "works.css";
+@import "aptitude.css";
+@import "questions.css";
+@import "about.css";
+@import "footer.css";
+@import "faq.css";
+@import "faq-index.css";
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 2.5;
+}
+
+a {
+    text-decoration: none;
+    color: #4d4e50;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+span {
+    color: #f17134;
+}
+input {
+    outline: none;
+}
+
+sup {
+    padding-right: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+/*-------------- Burger-------------*/
+
+
+
+#burger {
+    display: none;
+}
+
+.burger__btn {
+    display: block;
+    position: relative;
+    top: 4px;
+    right: 0;
+    z-index: 1000;
+}
+
+.button {
+    position: relative;
+    display: none;
+    width: 26px;
+    height: 3px;
+    top: 0;
+    right: 0;
+    margin-bottom: 4px;
+    background: #4876D0;
+}
+
+
+.burger__block {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 0;
+    padding: 35px;
+    width: 0;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+
+.burger__nav {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    color: #000000;
+    text-decoration: none;
+    opacity: 1;
+    font-weight: 600;
+    transition: opacity 0.1s linear;
+    margin: 40px 0;
+}
+
+.b_nav__link {
+    padding: 15px 0;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#b_nav_btn {
+    display: none;
+}
+
+.burger__btn__down1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #d8e0f3;
+    border-radius: 22px;
+    background-color: #fdfeff;
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-right: 65px;
+}
+
+.burger__btn__down1:before {
+    content: "EN";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.b_btn-down {
+    display: flex;
+    justify-content: center;
+
+}
+
+.burger_btn:after {
+    content: url("../img/h-btn.png");
+    display: block;
+    position: relative;
+    top: -2px;
+    left: 65px;
+    opacity: 0.3;
+}
+
+.b__link-take {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+    background-color: #80b0f2;
+    color: #000000;
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    left: 30px;
+    transition: opacity .2s linear;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,.18);
+    margin: 10px 0;
+}
+
+.burger__social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.burger__social__log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+}
+
+.burger__container1:checked + .burger__container2 .burger__block {
+    display: block;
+    position: absolute;
+
+    width: 300px;
+    transition-duration: .2s;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+
+
+}
+
+
+
+
+/*--------------Container--------------*/
+.container {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+
+
+/*.........Media............*/
+
+@media screen and (max-width: 1224px) {
+
+    .header__nav {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    .nav__link-take {
+        margin: 0 10px;
+    }
+
+    .intro__content {
+        width: 550px;
+    }
+    .intro__photo {
+        width: 350px;
+        height: 350px;
+        transition-duration: 1s;
+    }
+    .intro__img {
+        width: 350px;
+        height: 410px;
+        transition-duration: 1s;
+    }
+
+    .goals__inner {
+        flex-direction: column;
+        transition-duration: 1s;
+    }
+    .goals__block {
+        margin: 10px auto;
+        transition-duration: 1s;
+    }
+
+    .aptitude__test {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .aptitude__content {
+        margin: 30px 0;
+    }
+    .aptitude__block {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .nav_btn_up {
+        display: none;
+    }
+
+    .aptitude {
+        padding: 20px 0;
+    }
+    .aptitude__block {
+        position: relative;
+        top: -90px;
+        width: 650px;
+        justify-content: space-around;
+        padding: 10px;
+        transition-duration: 1s;
+    }
+
+    .aptitude__btn {
+        position: relative;
+        bottom: -285px;
+        transition-duration: 1s;
+    }
+    .aptitude__btn1 {
+        width: 650px;
+        transition-duration: 1s;
+    }
+
+    .social {
+        right: 400px;
+        transition-duration: 1s;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .intro__content {
+        width: 100%;
+    }
+    .intro__title {
+        width: 60%;
+    }
+    .intro__subtitle {
+        width: 45%;
+    }
+    .intro__btn__right,
+    .intro__btn__left {
+        width: 400px;
+    }
+    .intro__inner {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 350px;
+        transition-duration: 1s;
+    }
+    .intro__photo {
+        margin-top: 80px;
+    }
+
+    .goals__block {
+        width: 650px;
+    }
+    .goals__img1 {
+        width: 33%;
+        height: 56px;
+    }
+    .goals__content-1 {
+        margin: 30px 30px 30px 70px;
+    }
+
+    .work__item {
+        flex-direction: column;
+        align-items: center;
+        transition-duration: 1s;
+    }
+    .work__inner {
+        margin: 0 auto;
+    }
+    .work__block {
+        margin: 0 auto;
+    }
+    .work__block-2 {
+        order: 0;
+        transition-duration: .2s;
+    }
+    .work__inner-img1 {
+        position: relative;
+        top: 45px;
+        margin: 0 auto;
+        transition-duration: 1s;
+    }
+    .work__inner-img2 {
+        position: relative;
+        margin: 0 auto;
+        top: 45px;
+        transition-duration: 1s;
+    }
+
+    .questions {
+        padding: 0;
+    }
+    .questions__inner {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .questions__img {
+        margin: 50px 0;
+        width: 350px;
+        height: 350px;
+    }
+    .q__photo {
+        width: 200px;
+        height: 440px;
+    }
+    .questions__block {
+        margin: 20px 0;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer__logo{
+        display: flex;
+        position: relative;
+        left: -420px;
+        top: 20px;
+    }
+    .footer__nav {
+        flex-direction: column;
+        margin: 0 auto;
+        width: auto;
+    }
+    .social {
+        position: relative;
+        margin: 15px auto;
+        top: 0;
+        right: 0;
+        left: 9px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+
+
+    .container {
+        max-width: 768px;
+    }
+
+    .intro__title,
+    .intro__subtitle {
+        width: 550px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+
+
+    .intro__btn__left {
+        margin-bottom: 10px;
+        transition-duration: 1s;
+    }
+
+
+    .aptitude {
+        margin: 50px 0;
+    }
+}
+
+
+@media screen and (max-width: 728px) {
+
+    .container {
+        max-width: 568px;
+    }
+
+
+    .goals__block {
+        width: 550px;
+    }
+    .goals__img1 {
+        width: 45%;
+        height: 52px;
+    }
+    .goals__content-1 {
+        margin: 30px 30px 30px 40px;
+    }
+
+    .aptitude__block {
+        width: 550px;
+    }
+    .aptitude__btn1 {
+        width: 550px;
+    }
+}
+
+
+@media screen and (max-width: 568px) {
+
+    .container {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .burger {
+        display: block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .nav_btn-down {
+        display: none;
+    }
+
+    .button__burger1,
+    .button__burger2,
+    .button__burger3 {
+        display: block;
+    }
+
+
+    .intro__content {
+        width: 100%;
+    }
+    .intro__title {
+        font-size: 23px;
+        width: 415px;
+    }
+    .intro__subtitle {
+        font-size: 14px;
+        width: 400px;
+    }
+
+    .intro__btn {
+        justify-content: flex-start;
+    }
+
+    .intro__btn__left {
+        margin-right: 35px;
+    }
+    .intro__btn__left,
+    .intro__btn__right {
+        width: 235px;
+    }
+
+    .intro__photo {
+        width: 75%;
+        height: 65%;
+    }
+
+    .goals__block {
+        width: 350px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .goals__img1 {
+        width: 26%;
+        height: 52px;
+    }
+
+    .work__block {
+        width: 100%;
+    }
+
+    .aptitude__block {
+        width: 300px;
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    .aptitude__btn {
+        bottom: -320px;
+        width: 340px;
+    }
+    .aptitude__btn1 {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .intro__title,
+    .goals__title,
+    .work__title,
+    .aptitude__title,
+    .questions__title {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .intro__subtitle,
+    .goals__subtitle,
+    .work__subtitle,
+    .aptitude__subtitle,
+    .questions__subtitle {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .goals__block {
+        width: 80%;
+    }
+
+    .goals__img1 {
+        width: 32%;
+    }
+
+    .goals__img2,
+    .goals__img3,
+    .goals__img4 {
+        width: 40%;
+    }
+
+    .questions__block {
+        width: 80%;
+        align-items: center;
+    }
+
+    .work__number {
+        width: 20%;
+        margin-right: 0;
+    }
+
+    .work__txt {
+        width: 80%;
+    }
+    .work__name {
+        font-size: 19px;
+    }
+    .work__text {
+        font-size: 13px;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+
+}

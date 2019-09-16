@@ -1,0 +1,140 @@
+footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    bottom: 0;
+    background: #f3f7ff;
+    position: relative;
+    border-top: 2px solid #fbfcfe;
+    align-items: center;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 635px;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.f_nav__link {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    opacity: 1;
+    border-top: 1px solid transparent;
+    transition: opacity 0.1s linear;
+    height: 85px;
+}
+
+.f_nav__link:hover {
+    border-top: 3px solid #2491e4;
+    opacity: 0.8;
+    padding-top: 18px;
+    transition: opacity .2s linear;
+}
+
+.footer_btn{
+    display: flex;
+}
+
+.footer_btn-down {
+    display: flex;
+}
+
+
+#f_nav_btn {
+    display: none;
+}
+
+.footer__btn__down1 {
+    cursor: pointer;
+    padding: 12px 30px 10px 5px;
+    border: 1px solid #d8e0f3;
+    border-radius: 22px;
+    background-color: #fdfeff;
+    width: 115px;
+    height: 45px;
+}
+
+.footer__btn__down1:before {
+    content: "EN";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.footer__btn__down:checked + .footer__btn__down1:after {
+    content: "UA";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #d8e0f3;
+    border-radius: 22px;
+    background-color: #fdfeff;
+    width: 115px;
+    height: 45px;
+    font-weight: 500;
+    top: -77px;
+    right: 7px;
+}
+
+.footer__text {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.social__log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 17px;
+}
+
+.social__icon {
+    fill: #ffffff;
+    display: block;
+    height: 25px;
+    transition: .2s linear;
+}
+
+.social__icon:hover {
+    fill: #000000;
+    transition: fill .2s linear;
+}
+
+.circle__facebook,
+.circle__twitter,
+.circle__linkedin {
+    fill: #007bff;
+}

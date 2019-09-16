@@ -1,0 +1,30 @@
+
+.faq {
+    width: 100%;
+    margin: 140px 0;
+    height: auto;
+}
+
+.faq__content {
+    width: 75%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__intro {
+    text-align: center;
+}
+
+.faq__title {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.faq__subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
